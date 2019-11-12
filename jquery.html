@@ -1,0 +1,44 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#p1").hide();
+  });
+  $("#show").click(function(){
+    $("#p1").show();
+  });
+  $("#toggle").click(function(){
+    $("#p1").toggle();
+  });
+  $("#Red").click(function(){
+    $("#p1").removeClass("blue");
+    $("#p1").addClass("red");
+  });
+  $("#Blue").click(function(){
+    $("#p1").removeClass("red");
+    $("#p1").addClass("blue");
+  });
+});
+</script>
+<style>
+    .red {
+      background-color: red;
+    }
+    .blue {
+      background-color: blue;
+    }
+    </style>
+</head>
+<body>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="toggle">Toggle</button>
+<button id="Red">Red</button>
+<button id="Blue">Blue</button>
+<div id="p1">
+    <p >This is first div</p>
+</div>
+</body>
+</html>
